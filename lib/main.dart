@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(16),
               height: 200,
-              color: Colors.red,
+              color: Colors.black,
               padding: EdgeInsets.all(16),
               child: Image.asset("assets/images/me.jpg"),
             ),
@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
               height: 200,
               child: Center(
                 child: Text(
-                  "Albin Mathews Joseph",
+                  " Albin Mathews Joseph A.K.A  Almajoo is currently a btech student trying to make a mark in this world.",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -55,7 +55,11 @@ class MyApp extends StatelessWidget {
               icon: Icon(Icons.work),
               label: 'Experience',
             ),
-          ],
+            BottomNavigationBarItem(
+              icon: Icon(Icons.emoji_emotions),
+              label: 'Hobbies',
+            ),
+          ],type:BottomNavigationBarType.fixed
         ),
       ),
       debugShowCheckedModeBanner: false,
